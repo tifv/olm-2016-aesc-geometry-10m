@@ -1,0 +1,146 @@
+% $date: 2015-09-11
+
+\section*{Две важные леммы}
+
+% $authors:
+% - Алексей Пономарёв
+
+% $build$style:
+% - .[colour-links]
+
+% $matter[-preamble-package-guard]:
+% - preamble package: subcaption
+% - .[preamble-package-guard]
+
+\claim{Лемма об~отношении площадей треугольников с~общим углом}
+\[
+    \frac{S(A B C)}{S(A B' C')}
+=
+    \frac{A B}{A B'} \cdot \frac{A C}{A C'}
+,\]
+где точки $B$ и~$B'$ лежат на~одной стороне данного угла с~вершиной~$A$,
+а~точки $C$ и~$C'$~--- на~другой стороне.
+
+\begin{problems}
+
+\item
+Докажите лемму.
+
+\end{problems}
+
+\claim{Лемма об~отношении площадей треугольников с~общей стороной}
+\[
+    \frac{S(A B C)}{S(A B C')} = \frac{P C}{P C'}
+,\]
+где $P$~--- точка пересечения прямых $AB$ и~$CC'$.
+
+\begin{problems}
+
+\item
+Докажите лемму.
+Как она видоизменяется, если точка~$P$ не~существует (прямые параллельны)?
+Не~поленитесь и~перечислите все частные случаи расположения точек $C$ и~$C_1$.
+
+\end{problems}
+
+\emph{%
+\textbf{Внимание!}
+В~следующих задачах можно пользоваться \emph{только} леммами о~площадях.}
+
+\begin{figure}[hb]
+\begin{center}
+    \jeolmfigure[width=0.3\linewidth]{generic-triangle}
+    \caption{%
+        стандартные обозначения в этом листочке.
+        В треугольнике $ABC$ проведены чевианы $A A_1$, $B B_1$ и $C C_1$,
+        пересекающиеся в точке~$P$.}
+    \label{triangle-area-1:fig:generic-triangle}
+\end{center}
+\end{figure}
+
+\begin{problems}
+
+\item
+В~треугольнике $ABC$ площади~$10$ проведены чевианы в~обозначениях
+рис.~\ref{triangle-area-1:fig:generic-triangle}.
+Известно, что $A B_1 : B_1 C = 1 : 2$, $B_1 P : P B = 2 : 3$.
+Найдите
+\\
+\subproblem
+площади треугольников $A B_1 B$, $ABP$, $BPC$, $APC$;
+\\
+\subproblem
+отношения отрезков $B A_1 : A_1 C$, $A C_1 : C_1 B$, где $C_1$~--- точка
+пересечения $AB$ и~$CP$;
+\\
+\subproblem
+отношения отрезков $AP : P A_1$ и~$CP : P C_1$.
+
+\item
+В~стандартных обозначениях точек известны отношения
+$C B_1 : B_1 A = 2 : 3$, $B A_1 : A_1 C = 2 : 1$.
+Площадь треугольника $P C B_1$ равна $6$.
+Найдите
+\\
+\subproblem
+площади $A P B_1$, $ABP$, $BCP$;
+\\
+\subproblem
+отношения отрезков $A C_1 : C_1 B$, $AP : P A_1$, $BP : P B_1$, $CP : P C_1$.
+
+\item
+В~стандартных обозначениях даны отношения $A B_1 : B_1 C = 2 : 3$
+и~$AP : P A_1 = 5 : 2$.
+Найдите все остальные отношения на отрезках.
+\emph{(Возьмите $S_{BCP} = 6$.)}
+
+\item
+В~стандартных обозначениях даны отношения $CP : P C_1 = 5 : 3$
+и~$AP : P A_1 = 5 : 2$.
+Найдите все остальные отношения на отрезках.
+
+\begin{figure}[hb]
+\leavevmode\null\hfill
+    \begin{subfigure}{0.3\textwidth}
+        \jeolmfigure[height=0.8\linewidth]{problem-556}
+        \caption{к~задаче~\ref{triangle-area-1:problem:556}.}
+        \label{triangle-area-1:problem:556:fig}
+    \end{subfigure}
+\hfill
+    \begin{subfigure}{0.3\textwidth}
+        \jeolmfigure[height=0.8\linewidth]{problem-559}
+        \caption{к~задаче~\ref{triangle-area-1:problem:559}.}
+        \label{triangle-area-1:problem:559:fig}
+    \end{subfigure}
+\hfill
+    \begin{subfigure}{0.3\textwidth}
+        \jeolmfigure[height=0.8\linewidth]{problem-564}
+        \caption{к~задаче~\ref{triangle-area-1:problem:564}.}
+        \label{triangle-area-1:problem:564:fig}
+    \end{subfigure}
+\hfill\null\par
+    \caption{}
+\end{figure}
+
+\item
+\label{triangle-area-1:problem:556}%
+Рис.~\ref{triangle-area-1:problem:556:fig}.
+Найдите отношение $S_{C M_1 M M_2} : S_{ABC}$.
+
+\item
+\label{triangle-area-1:problem:559}%
+Стороны треугольника $ABC$ площади $S$ удвоены, как показано
+на~рис.~\ref{triangle-area-1:problem:559:fig}.
+Найдите отношение $S_{A_1 B_1 C_1} : S$.
+
+\item
+\label{triangle-area-1:problem:564}%
+Дан треугольник $ABC$ площади $S$.
+На сторонах $AB$, $BC$ и $CA$ взяты точки $C_1$, $A_1$ и $B_1$ соответственно
+так, что
+$A C_1 : C_1 B = 1 : 2$, $B A_1 : A_1 C = 2 : 3$, $C B_1 : B_1 A = 1 : 1$
+(рис.~\ref{triangle-area-1:problem:564:fig}).
+Найдите отношение $S_{A_1 B_1 C_1} : S$.
+
+\end{problems}
+
