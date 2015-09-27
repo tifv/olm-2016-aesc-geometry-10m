@@ -1,0 +1,9 @@
+$build$style:
+- .[a6paper,landscape]
+
+$build$style[print]:
+- .[tiled4]
+$build$matter[print]: [[v1], [v1], [v1], [v1]]
+
+$matter: [v1]
+

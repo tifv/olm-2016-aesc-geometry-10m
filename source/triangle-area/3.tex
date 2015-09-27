@@ -1,0 +1,157 @@
+% $date: 2015-09-25
+
+\section*{Теоремы ван Обеля и Жергонна}
+
+% $build$style[-print]:
+% - .[colour-links]
+
+% $matter[-preamble-package-guard]:
+% - preamble package: subcaption
+% - .[preamble-package-guard]
+
+\emph{Задачи со~звездочкой \textbf{*} менее обязательные, чем остальные.}
+
+
+\subsection*{Теоремы Чевы и Менелая (повторение)}
+
+\begin{figure}[hb]
+\begin{center}
+    \jeolmfigure[width=0.3\linewidth]{menelaus-0}
+    \caption{к задаче~\ref{triangle-area-3:problem:1}.}
+    \label{triangle-area-3:problem:1:fig}
+\end{center}
+\end{figure}
+
+\begin{problems}
+
+\item
+\label{triangle-area-3:problem:1}%
+Рис.~\ref{triangle-area-3:problem:1:fig}.
+Решите каждый пункт однократным применением теоремы Чевы или Менелая
+(и~используя предыдущие пункты):
+\begin{tabbing}
+\subproblem
+зная $PK : KQ = 2 : 3$ и~$NS : SQ = 1 : 3$,
+найдите $NL : LK$;
+\\
+\subproblem
+\ldots найдите $RN : NP$;
+\qquad\=
+\subproblem
+\ldots найдите $KS : SR$;
+\\
+\subproblem
+\ldots найдите $PS : SM$;
+\qquad\>
+\subproblem
+\ldots найдите $PL : LS$.
+\end{tabbing}
+\emph{Подсказка: во всех пунктах достаточно теоремы Менелая.}
+
+\begin{figure}[hb]
+\leavevmode\null\hfill
+    \begin{subfigure}{0.42\textwidth}
+        \jeolmfigure[height=0.5\linewidth]{menelaus-1}
+        \caption{к~задаче~\ref{triangle-area-1:problem:2}.}
+        \label{triangle-area-3:problem:2:fig}
+    \end{subfigure}
+\hfill
+    \begin{subfigure}{0.3\textwidth}
+        \jeolmfigure[height=0.7\linewidth]{menelaus-2}
+        \caption{к~задаче~\ref{triangle-area-1:problem:3}.}
+        \label{triangle-area-3:problem:3:fig}
+    \end{subfigure}
+\hfill\null\par
+    \caption{}
+\end{figure}
+
+%\begin{figure}[hb]
+%\begin{center}
+%    \jeolmfigure[height=0.20\linewidth]{menelaus-1}
+%    \caption{к~задаче~\ref{triangle-area-1:problem:2}.}
+%    \label{triangle-area-3:problem:2:fig}
+%\end{center}
+%\end{figure}
+
+\item
+\subproblem
+\label{triangle-area-1:problem:2}%
+Докажите, что
+на~рис.~\ref{triangle-area-3:problem:2:fig}
+выполняется $A C_1 : C_1 B = A C_2 : C_2 B$.
+\\
+%\begin{figure}[hb]
+%\begin{center}
+%    \jeolmfigure[height=0.20\linewidth]{menelaus-2}
+%    \caption{к~задаче~\ref{triangle-area-1:problem:3}.}
+%    \label{triangle-area-3:problem:3:fig}
+%\end{center}
+%\end{figure}
+\subproblemx{*}
+\label{triangle-area-1:problem:3}%
+Докажите, что точки $A_2$, $B_2$ и~$C_2$
+на~рис.~\ref{triangle-area-3:problem:3:fig}
+лежат на~одной прямой.
+
+\end{problems}
+
+
+\subsection*{Лемма о трёх параллелограммах}
+
+\begin{problems}
+
+\item
+\label{triangle-area-3:problem:parallelogramm}%
+\textit{Лемма о трёх параллелограммах.}
+На~рис.~\ref{triangle-area-3:problem:parallelogramm:fig}
+дан параллелограмм $ABCD$, прямые $a$ и~$b$ проходят через точку~$M$
+параллельно его сторонам.
+Точка $N$~--- пересечение прямых $BP$ и~$DQ$.
+Докажите, что точки $C$, $M$ и~$N$ лежат на~одной прямой.
+
+\begin{figure}[hb]
+\begin{center}
+    \jeolmfigure[width=0.3\linewidth]{parallelogram}
+    \caption{к лемме о трех параллелограммах}
+    \label{triangle-area-3:problem:parallelogramm:fig}
+\end{center}
+\end{figure}
+
+\end{problems}
+
+
+\subsection*{Теоремы ван Обеля и Жергонна}
+
+\begin{figure}[hb]
+\begin{center}
+    \jeolmfigure[width=0.3\linewidth]{generic-triangle}
+    \caption{%
+        \emph{стандартные обозначения} в~этом разделе.
+        В~треугольнике $ABC$ проведены чевианы $A A_1$, $B B_1$ и~$C C_1$,
+        пересекающиеся в~точке~$P$.}
+    \label{triangle-area-3:fig:generic-triangle}
+\end{center}
+\end{figure}
+
+\emph{Вернемся к лемме о площадях!}
+
+\begin{problems}
+
+\item
+\claim{Теорема ван Обеля}
+Докажите, что $AP : P A_1 = A C_1 : C_1 B + A B_1 : B_1 C$.
+
+\item
+\claim{Теорема Жергонна}
+Докажите, что $P A_1 : A A_1 + P B_1 : B B_1 + P C_1 : C C_1 = 1$.
+
+\itemx{*}
+Можно~ли сформулировать обратные теоремы?
+(И будут~ли они верны? :)
+
+\itemx{*}
+Объясните, почему теоремы ван Обеля и~Жергонна~--- это на~самом деле одно
+и~то~же геометрическое утверждение.
+
+\end{problems}
+

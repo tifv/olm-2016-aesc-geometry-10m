@@ -20,3 +20,4 @@ dot(Label("$C$", pC, SW));
 dot(Label("$A_1$", pA1, S));
 dot(Label("$B_1$", pB1, NW));
 dot(Label("$C_1$", pC1, NE));
+
