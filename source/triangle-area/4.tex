@@ -1,0 +1,155 @@
+% $date: 2015-10-02
+
+\section*{Метод площадей --- разнобой}
+
+% $build$style[-print]:
+% - .[colour-links]
+
+% $matter[-preamble-package-guard]:
+% - preamble package: subcaption
+% - .[preamble-package-guard]
+
+\begin{problems}
+
+\item
+\label{triangle-area-4:problem:two-triangles}%
+Точки $T$, $N$ и~$D$ соответственно на~сторонах $BC$, $AC$ и~$AB$
+треугольника $ABC$ таковы, что
+\(
+    AD : DB = BT : TC = CN : NA = k
+\)
+для некоторого $k < 1$.
+Прямые $AT$, $BN$ и~$CD$ в~пересечении дают треугольник $QEF$
+(рис.~\ref{triangle-area-4:problem:two-triangles:fig}).
+Найдите отношение $S_{QEF}$ к~$S_{ABC}$.
+
+\begin{figure}[hb]
+\leavevmode\null\hfill
+    \begin{subfigure}{0.4\textwidth}
+    \begin{center}
+        \jeolmfigure[height=0.75\linewidth]{two-triangles}
+        \caption{к задаче~\ref{triangle-area-4:problem:two-triangles}.}
+        \label{triangle-area-4:problem:two-triangles:fig}
+    \end{center}
+    \end{subfigure}
+\hfill
+    \begin{subfigure}{0.4\textwidth}\centering
+    \begin{center}
+        \jeolmfigure[height=0.75\linewidth]{trapezoid}
+        \caption{к задаче~\ref{triangle-area-4:problem:trapezoid}.}
+        \label{triangle-area-4:problem:trapezoid:fig}
+    \end{center}
+    \end{subfigure}
+\hfill\null\par
+    \caption{}
+\end{figure}
+
+
+\item
+\label{triangle-area-4:problem:trapezoid}%
+Точки $Q$ и~$T$~---соответственно середины $BC$ и~$AD$~--- оснований трапеции
+$ABCD$ (рис.~\ref{triangle-area-4:problem:trapezoid:fig}).
+На~продолжении диагонали~$AC$ отмечена точка~$K$.
+Прямые $KQ$ и~$AB$ пересекаются в~точке~$E$, а~$KT$ и~$CD$~--- в~точке~$F$.
+Докажите, что $EF \parallel AD$.
+
+\item
+\label{triangle-area-4:problem:modified-gergonne}%
+\emph{(Теорема Жергонна из~альтернативной вселенной.)}
+\\
+Рис.~\ref{triangle-area-4:problem:modified-gergonne:fig}.
+Докажите теорему:\enspace
+\(
+    - NL : KL + NR : PR + NQ : QS = 1
+\).
+%\\
+%\emph{%
+%Подсказка: как доказывалась~бы теорема Жергонна для треугольника $PSK$
+%с~чевианами, пересекающимися в~точке~$N$?}
+
+\begin{figure}[hb]
+\begin{center}
+    \jeolmfigure[width=0.3\linewidth]{gergonne-modified}
+    \caption{к задаче~\ref{triangle-area-4:problem:modified-gergonne}.}
+    \label{triangle-area-4:problem:modified-gergonne:fig}
+\end{center}
+\end{figure}
+
+\item
+Медиана~$BM$ и~биссектриса~$CL$ в~треугольнике $ABC$ пересекаются в~точке~$Q$.
+Найдите отношение $CQ : QL$, если $\angle A = 30^\circ$, $\angle B = 45^\circ$.
+
+\item
+\emph{Напоминание.}
+Пусть в~треугольнике даны длины сторон $BC = a$, $CA = b$, $AB = c$.
+\\
+\subproblem
+\label{triangle-area-4:problem:gergonne-point}%
+Найдите длины отрезков, на~которые стороны треугольника разбиваются точками
+касания с~вписанной окружностью;
+убедитесь в~существовании \emph{точки Жергонна}
+(рис.~\ref{triangle-area-4:problem:gergonne-point:fig}).
+\\
+\subproblem
+\label{triangle-area-4:problem:nagel-point}%
+Найдите длины отрезков, на~которые стороны треугольника разбиваются точками
+касания с~вневписанными окружностями;
+убедитесь в~существовании \emph{точки Нагеля}
+(рис.~\ref{triangle-area-4:problem:nagel-point:fig}).
+
+\begin{figure}[hb]
+\leavevmode\null\hfill
+    \begin{subfigure}{0.4\textwidth}
+    \begin{center}
+        \jeolmfigure[height=0.75\linewidth]{gergonne-point}
+        \caption{к задаче~\ref{triangle-area-4:problem:gergonne-point}.}
+        \label{triangle-area-4:problem:gergonne-point:fig}
+    \end{center}
+    \end{subfigure}
+\hfill
+    \begin{subfigure}{0.4\textwidth}
+    \begin{center}
+        \jeolmfigure[height=0.75\linewidth]{nagel-point}
+        \caption{к задаче~\ref{triangle-area-4:problem:nagel-point}.}
+        \label{triangle-area-4:problem:nagel-point:fig}
+    \end{center}
+    \end{subfigure}
+\hfill\null\par
+    \caption{}
+\end{figure}
+
+\end{problems}
+
+%\begin{figure}[hb]
+%\begin{center}
+%    \XXX jeolmfigure[width=0.3\linewidth]{../3/menelaus-0}
+%    \caption{к задаче~\ref{triangle-area-4:problem:ceva-feast}.}
+%    \label{triangle-area-4:problem:ceva-feast:fig}
+%\end{center}
+%\end{figure}
+
+%\item
+%\label{triangle-area-4:problem:ceva-feast}%
+%Рис.~\ref{triangle-area-4:problem:ceva-feast:fig}.
+%Дано $PK : KQ = 2 : 3$ и~$NL : LK = 5 : 6$.
+%Решите каждый пункт однократным применением теоремы Чевы или ван Обеля
+%(и~используя предыдущие пункты):
+%\begingroup \parskip=0pt
+%\begin{tabbing}
+%\subproblem
+%найдите $RN : NP$;
+%\qquad\=
+%\subproblem
+%найдите $PS : SM$;
+%\qquad\=
+%\subproblem
+%найдите $NS : SQ$;
+%\\
+%\subproblem
+%найдите $KS : SR$;
+%\qquad\>
+%\subproblem
+%найдите $PL : LS$.
+%\end{tabbing}
+%\endgroup % \parskip
+
