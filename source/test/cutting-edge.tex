@@ -1,0 +1,88 @@
+% $test: true
+% $date: 2015-11-13
+
+\section*{Срез}
+
+% $test$duration: [100, минут]
+
+% $style:
+% - ..
+% - verbatim: \def\jeolmgroup{10М}
+
+% $build$matter[print]: [[.], [.]]
+
+\begingroup
+    \ifx\mathup\undefined
+        \def\piconst{\uppi}
+    \else
+        \def\piconst{\mathup{\pi}}
+
+\subsection*{Алгебра}
+
+\begin{problems}
+
+\item
+Докажите неравенство\enspace
+$3^{n} - n > 2^{n} + n$\enspace
+при $n > 1$.
+
+\item
+Упростите выражение
+\\
+\( \displaystyle
+    \cos^6 \left( \alpha - \frac{  \piconst}{2} \right)
++
+    \sin^6 \left( \alpha - \frac{3 \piconst}{2} \right)
+-
+    \frac{3}{4}
+    \left(
+        \sin^2 \left( \alpha + \frac{  \piconst}{2} \right)
+        -
+        \cos^2 \left( \alpha + \frac{3 \piconst}{2} \right)
+    \right)^2
+\).
+
+\end{problems}
+
+\subsection*{Геометрия}
+
+\begin{problems}
+
+\item
+К окружности, вписанной в квадрат $ABCD$, проведена касательная, пересекающая
+стороны $AB$ и $AD$ в точках $M$ и $N$ соответственно.
+\\
+\subproblem
+Докажите, что периметр треугольника $AMN$ равен стороне квадрата.
+\\
+\subproblem
+Прямая~$MN$ пересекает прямую~$CD$ в точке~$P$.
+В~каком отношении делит сторону~$BC$ прямая, проходящая через точку~$P$
+и центр окружности, если $AM : MB = 1 : 2$?
+
+\item
+В равнобедренном треугольнике $ABC$ с углом $120^\circ$ при вершине~$A$
+проведена биссектриса~$BD$.
+В треугольник $ABC$ вписан прямоугольник $DEFH$ так, что сторона~$FH$ лежит
+на отрезке~$BC$, а вершина~$E$~--- на~отрезке~$AB$.
+Докажите, что $FH = 2 DH$.
+
+\end{problems}
+
+\subsection*{Математический анализ}
+
+\begin{problems}
+
+\item
+Постройте график функции\enspace
+$y = 2 \sin(x + \piconst / 4) + 1$.
+
+\item
+Найдите\enspace
+\( \displaystyle
+    \lim_{n \to \infty}
+        \frac{n^3 - n - 6}{-2 n^3 + n^2 - 17}
+\).
+
+\end{problems}
+
