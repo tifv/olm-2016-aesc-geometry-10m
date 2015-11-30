@@ -1,3 +1,4 @@
 $delegate:
 - triangle-area
 - excircle
+- circumcircle
