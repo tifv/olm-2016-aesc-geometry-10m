@@ -2,3 +2,5 @@ $delegate:
 - ./triangle-area-1
 - ./triangle-area-2
 - ./cutting-edge
+- ./circumcircle-1
+- ./exam-1
