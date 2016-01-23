@@ -1,0 +1,4 @@
+v1:
+  $style:
+  - ..
+  - verbatim: \def\jeolmgroup{Математика 10М}
