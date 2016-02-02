@@ -4,3 +4,5 @@ $build$style[print]:
 
 $matter:
 - v1
+$build$style:
+- .[a6paper,landscape]
