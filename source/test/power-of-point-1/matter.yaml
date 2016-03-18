@@ -2,4 +2,4 @@ $build$matter[print]: [[v1], [v1], [v1], [v1]]
 $build$style[print]:
 - .[tiled4]
 
-$matter: [v1]
+$matter: [[v1], [vr]]
